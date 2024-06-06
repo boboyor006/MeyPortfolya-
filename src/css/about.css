@@ -1,0 +1,152 @@
+.about{
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px 5px rgb(219, 205, 205);
+}
+
+
+
+
+.about_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    transform: translateY(20px);
+    animation: fadeInDown 1.5s ease-out forwards 0.5s;
+    opacity: 0;
+}
+
+@keyframes fadeInDown {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+.about_img>img{
+    width: 330px;
+    border-radius: 300px;
+}
+
+.about_laters{
+    display: flex;
+    width: 100%;
+    height:70% ;
+}
+
+
+
+
+.about_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+
+    transform: translateY(-20px);
+    animation: fadeInUp 1.5s ease-out forwards;height: 100%;
+    opacity: 0;
+}
+
+
+@keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.about__texts{
+    width: 50%;
+    height: 85%;
+}
+
+.about__texts>button{
+    width: 150px;
+    height: 50px;
+    border: 1px solid blueviolet;
+    background-color: rgb(127, 23, 224);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.about__texts>button:hover{
+    box-shadow: 0px 0px 10px 10px blueviolet;
+
+}
+
+.about__texts>button>a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.about_logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    transform: translateY(20px);
+    animation: fadeInDown 1.5s ease-out forwards 0.5s;
+    opacity: 0;
+
+    
+}
+
+
+
+
+.about_logos>img{
+    width: 150px;
+}
+
+
+/* mobile formati   800px */
+
+@media screen and (max-width:800px) {
+    .about{
+        height: 950px;
+    }
+    .about_laters{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about_img{
+        width: 100%;
+        height: 280px;
+    }
+
+    .about_img>img{
+        width: 250px;
+    }
+
+    .about_text{
+        margin-top: -20px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .about__texts{
+        width: 80%;
+    }
+
+    .about__texts>button{
+        margin-left: 80px ;
+    }
+
+    .about_logos{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -50px;
+        
+    }
+
+}
